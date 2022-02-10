@@ -1,0 +1,158 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: fantasy;
+    background-color: burlywood;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+    align-items: center;
+    background: maroon;
+    color: bisque;
+}
+
+h1 {
+   font-size: 250%; 
+}
+
+/*nav bar styling*/
+
+#top-list {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+    list-style-type: none;
+    list-style: none;
+    
+}
+
+nav a {
+    color: bisque;
+    font-weight: normal;
+    text-decoration: none;
+    
+  }
+
+nav a:hover {
+    color:black;
+}
+
+/* begin "body" styling for rest of page*/
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+aside {
+    flex: 1;
+    background-color: burlywood;
+    padding: 10%;
+    text-align: center;
+    display: inline-block;
+    font-size: 150%;
+}
+/*positioning project section title in aside*/
+
+h3 {
+    flex: 3;
+    padding: 20%;
+    position:relative;
+    top: 80%;
+    font-size: 150%;
+    
+}
+
+.about-me {
+    flex: 1;
+    background-color: burlywood;
+    padding: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+  /*fix text positioning in about me*/ 
+
+.card p {
+    text-align: center;
+    position: relative;
+    right: 100px;
+    top: 70px;
+}
+
+.projects {
+    flex: 1;
+    background-color: burlywood;
+    padding-left: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+}
+
+/* separating the different cards by class to position better*/
+.card {
+  border: 1px;
+  padding: 1%;
+  flex: 0 0 400px;
+  background-color: burlywood;
+  float: right;
+ 
+}
+
+.card header {
+    text-align: center;
+    background-color: burlywood;
+    color: maroon;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 150%
+}
+
+.card img {
+    width: 50%;
+}
+
+/* second project*/
+.card1 {
+    border: 1px;
+    padding: 1%;
+    flex: 0 0 400px;
+    background-color: burlywood;
+    float:right;
+    
+   
+  }
+.card1 header {
+    text-align: center;
+    background-color: burlywood;
+    color: maroon;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 150%
+}
+
+.card1 img {
+    width: 50%;
+}
+
+/* Third project*/
+.card2 {
+    border: 1px;
+    padding: 1%;
+    flex: 0 0 400px;
+    background-color: burlywood;
+   
+  }
+.card2 header {
+    text-align: center;
+    background-color: burlywood;
+    color: maroon;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 150%
+}
+
+.card2 img {
+    width: 50%;
+}
