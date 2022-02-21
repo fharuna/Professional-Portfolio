@@ -13,9 +13,10 @@
     <h1>Haruna Space</h1>
 <nav> 
     <ul id="top-list">
-        <li><a href="#">About Me</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact Me</a></li>
+        <a class="active"></a> 
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact-me">Contact Me</a></li>
     </ul>
 </nav>    
 </header>
@@ -26,14 +27,16 @@
     <h2>About Me</h2> 
 
     <!-- Adding section title in aside-->
-
+ <div id="asidetoo">
     <h3>Projects</h3>
-    </aside>
-
+</div> 
+</aside>
+  
     <!-- About me section to be aligned on other side-->
-
+    <!--Add photo of me-->
     <div class="about-me"></div>
-    <section class="card">
+    <section id="about-me" class="card"> 
+    <img id="portrait"src="portfolioportrait.jpeg" alt="picture of me"/> 
     <p>I'm a web developer who currently lives in Buffalo, NY. I have a Bachelors of Science in Paralegal Studies,
        therefore I do not have a massive background in tech. My new transition into tech is due to me wanting to 
        explore new beginnings and expand on the skills I do have. I am currently in the process of getting my certificate
@@ -45,7 +48,7 @@
    <!-- Begin Available Projects--> 
 
 <div class="projects">
-    <section class="card">
+    <section id="projects" class="card">
     <header>Project 1</header>
     <img src="https://www.jenkintownfest.org/wp-content/uploads/2019/09/TBD-Textiles-3.jpeg" alt="Project image" />
 </section> 
@@ -62,12 +65,14 @@
 
 <!-- footer -->
     <footer>
-        <span>Contact Me
-            <ul>
+        <div>
+        <hr class="rounded">    
+        <span id="contact-me">Contact Me</span>
+            <ul id="bottom-list">
                 <li>917-698-7995</li>
                 <li>Email: Haruna.fati@gmail.com</li>
             </ul>
-        </span>
+    </div>
     </footer>
 </body>
 </html>

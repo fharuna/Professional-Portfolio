@@ -47,12 +47,18 @@ main {
 }
 
 aside {
-    flex: 1;
-    background-color: burlywood;
-    padding: 10%;
-    text-align: center;
-    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left:15%;
     font-size: 150%;
+
+}
+
+#asidetoo {
+    font-size: 100%;
+    position: absolute;
+    top: 400%;
+    
 }
 /*positioning project section title in aside*/
 
@@ -77,12 +83,22 @@ h3 {
   /*fix text positioning in about me*/ 
 
 .card p {
+    display: flex;
+    flex-wrap: wrap;
     text-align: center;
     position: relative;
-    right: 100px;
-    top: 70px;
+    left: 0%;
+    top: -40%;
 }
+/*add and position image for portfolio*/
 
+#portrait {
+    position: relative;
+    top: 15%;
+    right: 60%;
+    border: 3px solid maroon;
+    
+}
 .projects {
     flex: 1;
     background-color: burlywood;
@@ -155,4 +171,25 @@ h3 {
 
 .card2 img {
     width: 50%;
+}
+
+#bottom-list {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    list-style: none;
+}
+footer {
+    text-decoration: none;
+    padding-top: 50pt;
+}
+
+span{
+    font-size: 20pt;
+}
+/*add border*/
+hr.rounded {
+    border-top: 8px solid #bbb;
+  border-radius: 5px;
+  border-color:maroon;
 }
